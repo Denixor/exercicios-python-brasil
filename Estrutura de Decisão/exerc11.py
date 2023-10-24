@@ -8,3 +8,15 @@
 #o percentual de aumento aplicado;
 #o valor do aumento;
 #o novo salário, após o aumento.
+
+salario = int(input("Coloque o salario: "))
+if salario <= 280:
+    salario += salario * 20 / 100
+elif salario > 280 and salario <= 700:
+    salario += salario * 15 / 100
+elif salario >= 700 and salario < 1500:
+    salario += salario * 10 / 100
+else:
+    salario += salario * 5 / 100
+
+print(f'O Salario vai ficar: {salario}')
